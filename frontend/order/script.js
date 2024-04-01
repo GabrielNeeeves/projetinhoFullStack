@@ -6,7 +6,7 @@ const addBtn = document.getElementById("addBtn");
 addBtn.addEventListener('click', function(e) {
     e.preventDefault();
 
-    if(quantidade.value == 0) {
+    if(quantidade.value <= 0) {
         window.alert('Quantidade inválida. Tente novamente')
     } else {
         const listaProd = document.createElement('p');
