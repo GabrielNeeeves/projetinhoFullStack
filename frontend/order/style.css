@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+* {
+    font-family: "Jura", sans-serif;
+    --font-color: #FFFFFF;
+    --option-bg-color: #D3D3D3; /* Opcaidade => 70% */
+    --text-bg-color: rgba(0, 0, 0, 65%);
+    font-size: 24px;
+}
+
+body {
+    color: var(--font-color);
+    margin: 10% auto;
+    
+    width: 360px;
+    height: 800px;
+}
+
+main#main {
+    /* position: relative; */
+    
+    position: relative;
+
+    width: 360px;
+    height: 800px;
+
+    background-image: url(./images/orderBg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
+}
+
+section#option {
+    /* position: absolute; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px;
+    
+    width: 89%;
+    min-height: 50%;
+
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    
+    background-color: var(--option-bg-color);
+    opacity: 70%;
+}
+
+section#option #label {
+    
+}
+
+/* produto */
+section#option #label p {
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: var(--text-bg-color);
+    margin-bottom: 37px;
+}
+
+section#option #label p select {
+    background-color: var(--text-bg-color);
+    color: var(--font-color);
+}
+
+/* quantidade */
+section#option #label input {
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: var(--text-bg-color);
+    color: var(--font-color);
+    border: none;
+}
+
+section#option #label input:focus {
+    outline: none;
+}
+
+section#option #label input::placeholder {
+    color: var(--font-color);
+    opacity: 50%;
+}
+
+
+/* addBtn */
+section#option input#addBtn {
+    background-image: url('./images/addBtnLogo.png');
+    width: 74px;
+    height: 67px;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 8%;
+}
+
+section#option input#addBtn:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+/* conteudo (valor total do pedido) */
+section#option div#conteudo {
+    border-radius: 8px;
+    background-color: var(--text-bg-color);
+    padding: 34px 4px;
+}
+
+
+/* voltarBtn */
+section#option button#voltarBtn {
+    padding: 3px 120px;
+    border: none;
+    background-color: var(--text-bg-color);
+    border-radius: 69px;
+}
+
+section#option button#voltarBtn:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+section#option button#voltarBtn a {
+    text-decoration: none;
+    color: var(--font-color);
+}

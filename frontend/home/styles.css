@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
 * {
+    font-family: "Jura", sans-serif;
     --font-color: #A8856F;
     --option-bg-color: #D3D3D3;
-}
-
-* {
-    font-family: "Jura", sans-serif;
 }
 
 body {
@@ -19,8 +16,8 @@ body {
 main#main {
     position: relative;
 
-    width: 400px;
-    height: 800px;
+    width: 360px;
+    height: 900px;
 
     background-image: url(./images/formBGImage.png);
     background-repeat: no-repeat;
